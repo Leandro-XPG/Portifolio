@@ -314,7 +314,7 @@ input[type = 'submit']:hover{
     .container{
         display: block;
         /*box-shadow: 0 0 5px #ffffff5b;*/
-        padding: 0 0 0 10px; 
+        padding: 0 0 0 15%; 
     }
     #topo h1{
         font-size: 32px;
@@ -342,6 +342,10 @@ input[type = 'submit']:hover{
         font-size: 36px;
     }
 
+
+    .projetos{
+        padding: 0 50% 0 0;
+    }
 
     .rolagem{
         width: 250px;
@@ -371,6 +375,25 @@ input[type = 'submit']:hover{
         box-shadow: 0 2px 5px #20b2aa;
     }
     
+
+    .formContainer{
+        max-width:200px;
+        height:100%;
+        padding:20px;
+        margin-top: 20px;
+    
+    }
+    .form input,.form textarea{
+        width:200px;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border:none;
+        background-color: transparent;
+        box-shadow: 0 0 5px lightseagreen;
+        color: white;
+    }
+
 }
 
 
