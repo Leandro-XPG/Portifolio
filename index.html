@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   
     
     <title>Portifólio</title>
 </head>
@@ -26,6 +26,30 @@
                     <button>Contato</button>
                 </a>
             </div>
+
+
+
+        <div class="abrir-menu" id="btn-menu">
+            <i class="bi bi-list"></i>
+        </div>
+            <div class="menu-mobile" id="menu-mobile">
+
+                <div class="fechar-btn"><i class="bi bi-x-lg"></i></div>
+
+                <nav>
+                    <ul>
+                       <li><a href="#">Início</a></li>
+                       <li><a href="#">Sobre Mim</a></li>
+                       <li><a href="#">Projetos</a></li>
+                       <li><a href="#">Contato</a></li>
+                    </ul>
+                   </nav>
+            </div>
+
+            <div class="overlay-menu">
+
+            </div>
+
         </header>
        </section>
 
@@ -48,15 +72,18 @@
                         <img src="img/seta_e.png" alt="seta" class="seta_e">
                     </button>-->
                     <div class="box">
+                        <i class="bi bi-code-slash"></i>
                         
-                        <h3>Html e Css</h3>
+                        <h3>Web Desenvolvimento</h3>
                         <p> Possuo um conhecimento intermediário em HTML e CSS, o que me permite criar layouts responsivos e bem estruturados. Estou familiarizado com as melhores práticas de semântica e acessibilidade, além de saber aplicar estilos e criar animações para melhorar a experiência do usuário. Estou sempre em busca de aprimorar minhas habilidades e acompanhar as novidades da web</p>
                     </div>
                     <div class="box">
+                        <i class="bi bi-filetype-sql"></i>
                         <h3>JavaScript</h3>
                         <p>Tenho um conhecimento intermediário em JavaScript, o que me permite desenvolver interações dinâmicas e aprimorar a funcionalidade de sites. Estou familiarizado com manipulação do DOM, eventos e funções assíncronas. Além disso, busco constantemente aprimorar minhas habilidades e aprender novas bibliotecas e frameworks que possam otimizar meu trabalho.</p>
                     </div>
                     <div class="box">
+                        <i class="bi bi-database"></i>
                         <h3>MySql</h3>
                         <p>Possuo um conhecimento intermediário em MySQL, que me permite criar e gerenciar bancos de dados de forma eficaz. Estou familiarizado com a criação de tabelas, execução de consultas e manipulação de dados, além de saber aplicar joins e otimizar consultas para melhorar o desempenho. Estou sempre buscando expandir meu entendimento sobre práticas de modelagem de dados e segurança.</p>
 
@@ -117,6 +144,6 @@
 
 
 
-    
+    <script src="script.js"></script>
 </body>
 </html>

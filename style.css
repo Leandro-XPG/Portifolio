@@ -4,13 +4,15 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-
 }
 
 span{
     color:#20b2aa;
 }
-
+ body{
+    background-color:#13161A;
+    color: white;
+ }
 
 .slide{
     display: flex;
@@ -19,19 +21,33 @@ span{
     margin: 0 50px;
 }
 
+
+
+
+.abrir-menu{
+    display: none;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+.overlay-menu{
+    display: none;
+}
+
+
 #menu{
     position: sticky;
     top:0;
     background-color: #13161A;
     box-shadow: 0 0 5px rgba(128, 128, 128, 0.144);
-    width: 100%;
     z-index: 1000;
-}
-.section{
     max-width: 100%;
     height: 170px;
     margin: 0 auto;
 }
+
 
 /*estilo do header*/
 
@@ -49,13 +65,14 @@ header{
 
 .navbar ul li{
     display:inline-block;
-    padding: 0 40px;
+    padding: 40px 40px;
 }
 
 .navbar a{
     color: rgb(134, 128, 128);
     padding:2px 20px;
     transition: .3s;
+    text-decoration: none;
 }
 
 .navbar a:hover{
@@ -73,6 +90,7 @@ header button{
     border-radius: 10px;
     transition: .3s;
     color:#13161A;
+    cursor: pointer;
 }
 
 
@@ -105,25 +123,45 @@ header button:hover{
 
 /*minhas habilidades*/
 
+
+
+
 #habilidades{
-    padding: 200px 30px;
+    flex: flex;
+    padding: 200px 10px;
     width:100%;
-    height: 100%;
+    height:100%;
+    display: block;
+    max-width: 1260px;
+    margin: auto;
+    line-height: 150%;
+    text-align: center;
+}
+
+#habilidades i{
+    color: lightseagreen;
+    font-size: 24px;
+    
+
 }
 
 #habilidades h2{
     text-align: center;
     color:white;
     font-size: 48px;
+    
 }
 
+#habilidades p{
+    text-align: left;
+}
 
 
 .container{
     display: flex;
     justify-content: space-between;
     padding: 20px 50px;
-}*
+}
 
 .box{
     max-width: 300px;
@@ -132,6 +170,7 @@ header button:hover{
     margin: 50px 15px;
     transition: .3s;
     cursor: default;
+    box-shadow: 0 2px 5px rgba(128, 128, 128, 0.205);;
 
 }
 
@@ -153,6 +192,9 @@ header button:hover{
 #projetos{
     width: 100%;
     height: 100%;
+    display: block;
+    max-width: 1260px;
+    margin: auto;
 }
 
 #projetos > h2{
@@ -214,6 +256,7 @@ header button:hover{
     width:100%;
     height:100%;
     text-align: center;
+    margin: 75px 0;
 }
 
 .formContainer{
@@ -246,6 +289,7 @@ input[type = 'submit']{
     cursor:pointer;
     background-color: lightseagreen;
     box-shadow: none;
+    transition: .3s;
    
 }
 
@@ -264,6 +308,8 @@ input[type = 'submit']:hover{
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 30px;
+    margin-top:20px;
 }
 
 
@@ -273,6 +319,7 @@ input[type = 'submit']:hover{
     border-radius: 50%;
     background-size: cover;
     transition: .3s;
+    background-color:#13161A ;
 
 }
 
@@ -297,103 +344,100 @@ input[type = 'submit']:hover{
 
 /*REPONSIVIDADE*/
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width:1200px){
+ 
+        .overlay-menu{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, 0.507);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: none;
+            transition: .2s;
+        }
+
+
+
+
+
+    .navbar,.contato{
+        display: none;
+    }
     
 
-    
+    .abrir-menu{
+    display: block;
+    position: absolute;
+    right: 0;
+    font-size: 32px;
+    margin: 10px 20px;
+    color: #20b2aa;
+    cursor: pointer;
 
-    header{
-        padding: 10px 4%;
+    }
+
+    #menu{
+        max-width: 100%;
+        height: 20%;
+        margin: 0 auto;
+    }
+    
+    .menu-mobile{
+        background-color: black;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 0%;
+        z-index:2000;
+        overflow: hidden;
+        display: block;
+        transition: .2s;
+    }
+
+    .menu-mobile.abrir_menu{
+        width:50%;
+    }
+
+    .menu-mobile.abrir_menu ~ .overlay-menu{
         display: flex;
-        align-items:center;
-        justify-content: space-between;
+    }
+
+    .menu-mobile ul {
+        text-align: right;
+        list-style-type:none;
+    }
+
+
+    .menu-mobile ul li{
+        padding: 15px 10%;
        
     }
-    
-    
-    .container{
-        display: block;
-        /*box-shadow: 0 0 5px #ffffff5b;*/
-        padding: 0 0 0 15%; 
-    }
-    #topo h1{
-        font-size: 32px;
-    }
-    #topo p{
-        font-size: 16px;
-    }
-
-    
-    .habilidades{
-      display: block;
-      margin-bottom: 30px;
-    }
-
-    .box{
-        width: 200px;
-        height: 100%;
-        margin: 70px 0;
-    }
-
-
-    #habilidades h2{
-        text-align: center;
-        color:white;
-        font-size: 36px;
-    }
-
-
-    .projetos{
-        padding: 0 50% 0 0;
-    }
-
-    .rolagem{
-        width: 250px;
-        display: block;
-        position: relative;
-    }
-
-
-
-
-
-    box:active{
-        box-shadow: 0 5px 5px lightseagreen;
-        transform: scale(1.1);
-    }
-
-    .rolagem:active{
-        background-position: 100% 100%;
-    }
-
-    .overlay:active{
-        opacity: 0;
-      }
-
-      .button:active{
-        transform: scale(1.2);
-        box-shadow: 0 2px 5px #20b2aa;
-    }
-    
-
-    .formContainer{
-        max-width:200px;
-        height:100%;
-        padding:20px;
-        margin-top: 20px;
-    
-    }
-    .form input,.form textarea{
-        width:200px;
-        padding: 10px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        border:none;
-        background-color: transparent;
-        box-shadow: 0 0 5px lightseagreen;
+    .menu-mobile ul li a{
         color: white;
+        font-weight:300px;
+        text-decoration:none;
+
     }
 
+    .menu-mobile ul li a:hover{
+        color: lightseagreen;
+        
+    }
+
+    .menu-mobile .fechar-btn{
+        padding:20px 8%;
+        cursor: pointer;
+    }
+
+    .menu-mobile .fechar-btn i{
+        color: lightseagreen;
+        font-size: 24px;
+    }
+    
 }
-
-
