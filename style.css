@@ -316,7 +316,8 @@ input[type = 'submit']:hover{
     border-radius: 50%;
     background-size: cover;
     transition: .3s;
-    background-color:#13161A ;
+    background-color:transparent ;
+    cursor: pointer;
 
 }
 
@@ -336,6 +337,70 @@ input[type = 'submit']:hover{
 
 .instagram{
     background-image: url(img/instagram.png);
+}
+
+
+
+
+
+
+
+
+/*MODO ESCURO\CLARO*/
+
+.marcador{
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 30px;
+    position: relative;
+    transition: .5s;
+    box-shadow: 0 2px 5px lightseagreen;
+}
+
+.indicador{
+    width: 30px;
+    height: 30px;
+    background-color: lightseagreen;
+    border-radius: 50%;
+    transform: scale(.9);
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+
+.marcador.light .indicador{
+    left: 70px;
+}
+
+.marcador.light{
+    background-color: white;
+}
+
+body.light{
+    background-color: white;
+    color: black;
+}
+
+body.light header{
+    background-color: white;
+}
+
+body.light #topo h1{
+    color: black;
+}
+
+body.light #habilidades h2{
+    color: black;
+}
+
+body.light #projetos h2{
+    color: black;
+}
+
+body.light #projetos .overlay{
+    color: white;
 }
 
 
@@ -423,6 +488,7 @@ input[type = 'submit']:hover{
         text-decoration:none;
 
     }
+
 
     .menu-mobile ul li a:hover{
         color: lightseagreen;
@@ -525,4 +591,24 @@ input[type = 'submit']:hover{
     }
 
 
+
+
+
+
+    /* MODO LIGHT */
+
+
+    body.light .menu-mobile{
+        background-color: white;
+    }
+
+
+    body.light .menu-mobile ul li a{
+        color:black;
+    }
+
+    body.light .menu-mobile ul li a:hover{
+        color: lightseagreen;
+        
+    }
 }
