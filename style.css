@@ -268,17 +268,25 @@ header{
 input[type = 'submit']{
     margin-top: 30px;
     cursor:pointer;
-    background-color: lightseagreen;
-    box-shadow: none;
+    background-color: #20b2aa;
+    box-shadow: 0 2px 5px lightseagreen;
     transition: .3s;
    
 }
 
 input[type = 'submit']:hover{
     transform: scale(1.1);
-    box-shadow: 0 2px 5px lightseagreen;
+    background-color: transparent;
 }
    
+
+
+
+
+
+
+
+
 
 /* RODAPÉ*/
 
@@ -595,7 +603,7 @@ body.light #contato h2{
 
 
     body.light .menu-mobile{
-        background-color: white;
+        background-color: #C0E9E7;
     }
 
 
