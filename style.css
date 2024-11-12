@@ -10,9 +10,13 @@ span{
     color:#20b2aa;
 }
  body{
-    background-color:#13161A;
+    background-color: #13161A;
     color: white;
  }
+
+
+
+
 
 .slide{
     display: flex;
@@ -20,6 +24,10 @@ span{
     /*box-shadow: 0 0 5px #ffffff5b;*/
     margin: 0 50px;
 }
+
+
+
+
 
 
 
@@ -361,12 +369,12 @@ input[type = 'submit']:hover{
 }
 
 body.light{
-    background-color: white;
+    background-color: #C0E9E7;
     color: black;
 }
 
 body.light #menu{
-    background-color: white;
+    background-color: #C0E9E7;
 }
 
 body.light #topo h1{
