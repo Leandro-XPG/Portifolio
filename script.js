@@ -21,14 +21,14 @@ marcador.addEventListener('click',()=>{
 
 
 
-const carrossel = document.querySelector('.carrossel');
-const setaEsquerda = document.querySelector('.seta-esquerda');
-const setaDireita = document.querySelector('.seta-direita');
+let carrossel = document.querySelector('.carrossel');
+let setaEsquerda = document.querySelector('.seta-esquerda');
+let setaDireita = document.querySelector('.seta-direita');
 
 let currentIndex = 0; // Índice do card que está sendo exibido
-const cards = document.querySelectorAll('.card'); // Todos os cards
-const totalCards = cards.length;
-const cardWidth = cards[0].offsetWidth + 70; // Largura de cada card + margem
+let cards = document.querySelectorAll('.card'); // Todos os cards
+let totalCards = cards.length;
+let cardWidth = cards[0].offsetWidth + 70; // Largura de cada card + margem
 
 // Defina a largura total do carrossel (total de cartões)
 carrossel.style.width = `${cardWidth * totalCards}px`;

@@ -244,6 +244,7 @@ header{
     overflow: hidden;
     max-width: 100%;
     padding-bottom: 40px;
+  
 }
 
 .carrossel{
@@ -280,6 +281,11 @@ header{
     color: white;
 }
 
+
+.card a{
+    width: 100%;
+    height: 100%;
+}
 
 
 /*CONTATO*/
@@ -374,6 +380,8 @@ input[type = 'submit']:hover{
 .github{
     background-image: url(img/gihub.png);
 }
+
+
 
 .linkedin{
     background-image: url(img/linkedin.png);
